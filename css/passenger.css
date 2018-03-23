@@ -1,0 +1,141 @@
+/*
+* @Author: ananayarora
+* @Date:   2017-05-03 19:28:37
+* @Last Modified by:   ananayarora
+* @Last Modified time: 2017-05-05 22:58:16
+*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  src: url("font.ttf");
+  font-family: "font";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: #fff;
+  z-index: +5;
+}
+
+.sidebar .top {
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .top img {
+  width: 50px;
+}
+
+.sidebar .pilot {
+  display: inline-block;
+  width: 49%;
+}
+
+.sidebar .pilot .small {
+  color: #333;
+  font-family: "Montserrat";
+}
+
+.sidebar .pilot img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar .pilot .name {
+  font-family: "Montserrat";
+  color: #2980b9;
+}
+
+.sidebar .info .small {
+  color: #333;
+  font-family: "Montserrat";
+}
+
+.sidebar .info .name {
+  color: #2980b9;
+  font-family: "Montserrat";
+  font-size: 17pt;
+}
+
+.sidebar .line {
+  width: 80%;
+  height: 4px;
+  border-radius: 20px;
+  background: #f2f2f2;
+}
+
+.sidebar .btn {
+  background: #2980b9;
+  color: #fff;
+  padding: 15px;
+  width: 150px;
+  font-size: 13pt;
+  display: inline-block;
+  margin: 5px;
+  font-family: "Montserrat";
+}
+
+.pilot {
+  position: absolute;
+  z-index: +10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat";
+}
+
+.dys-style {
+  background: yellow !important;
+  color: #000 !important;
+}
+
+.dys-style * {
+  color: #000 !important;
+  font-family: "font" !important;
+  line-height: 1.2em;
+}
+
+.dys-style .btn {
+  border: 2px solid #000;
+  background: yellow !important;
+  color: #000;
+}

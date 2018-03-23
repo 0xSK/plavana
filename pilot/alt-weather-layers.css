@@ -1,0 +1,283 @@
+/*SIMPLE MARKER ICON*/
+/*.marker-simple div {
+  cursor: pointer;
+  position: absolute;
+  white-space:nowrap;
+}*/
+
+.city-simple-bullet:after {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  content: '';
+}
+
+.city-lable {
+  position: absolute;
+  left: 2px;
+  bottom: 10px;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 12px;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+/*WEATHER MARKER ICON*/
+.marker-default div {
+  cursor: pointer;
+  position: absolute;
+  white-space:nowrap;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.30);
+}
+
+.marker-default:not(.expanded) .city-main-info {
+  display: block;
+}
+
+.marker-default:not(.expanded) .city-full-info {
+  display: none !important;
+}
+
+.marker-default.expanded .city-main-info {
+  display: none !important;
+}
+
+.marker-default.expanded .city-full-info {
+  display: block;
+}
+
+.marker-default .city-full-info {
+  background-color: #000;
+  color: #fff;
+}
+
+.city-full-info,
+.city-main-info {
+  margin-left: 11px;
+  margin-top: -7px;
+}
+
+.city-data {
+  display: inline-block;
+}
+
+.city-data table {
+  border-spacing: 0;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+.city-data table tbody tr td {
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+.city-data table tbody tr:first-of-type td {
+  padding-top: 3px;
+}
+
+.city-data table tbody tr:last-of-type td {
+  padding-bottom: 3px;
+}
+
+td.city-param-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.7em;
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
+td.city-param {
+  font-weight: 700;
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.city-icon {
+  display: flex;
+  min-width: 100px;
+  padding: 0;
+  height: 20px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.city-bullet:after {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  display: block;
+  content: '';
+}
+
+th.city-param,
+.city-name {
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 3px;
+  vertical-align: bottom;
+  text-align: center !important;
+  color: #fff;
+  line-height: 100%;
+}
+
+.city-name {
+  display: inline-block;
+}
+
+.city-weather {
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 14px;
+  /*font-weight: 500;*/
+  display: inline-block;
+  padding: 4px 3px;
+  line-height: 100%;
+  min-width: 16px;
+  /*vertical-align: center;*/
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+
+.weather-very-hot {
+  background: #f56048;
+}
+
+.weather-hot {
+  background: #fbaa1b;
+}
+
+.weather-average {
+  /*background: #f9db3b;*/
+  background: #E8D024;
+}
+
+.weather-cold {
+  background: #60bdfa;
+}
+
+.weather-very-cold {
+  background: #1c71f2;
+}
+
+.weather-none {
+  background: grey;
+}
+
+/* LAYERS CONTROL*/
+.weather-control-layers {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  background: #FFFFFF;
+  color: #777;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.50);
+  border-radius: 5px;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.weather-control-layers-toggle {
+  text-align: center;
+  padding: 0 1em;
+  display: block;
+  cursor: pointer;
+}
+
+.weather-control-layers .weather-control-layers-list {
+  height: 0px;
+  border-top: none;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.weather-control-layers-expanded .weather-control-layers-list {
+  height: auto;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.weather-control-layers label {
+  display: block;
+  cursor: pointer;
+  padding: 0 1em;
+  font-weight: normal !important;
+  margin: 0 !important;
+}
+
+.weather-control-layers .weather-control-layers-selector {
+  display: none;
+}
+
+.weather-control-layers .weather-control-layers-selector:checked ~ label {
+  color: #222222;
+  background-color: #E0E0E0;
+}
+
+.weather-control-layers-separator {
+  border-top: 1px solid #777;
+}
+
+.weather-control-layers-last > .weather-layer-container:last-of-type label {
+  border-radius: 0 0 5px 5px;
+}
+
+/*SCALE*/
+.leaflet-control-color-scale {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+  background: #FFFFFF;
+  color: #777;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.50);
+  border-radius: 5px;
+  padding: 0;
+  height: 26px;
+}
+
+.leaflet-control-color-scale-line {
+  margin: 15px 5px 5px 5px;
+  position: inherit;
+  height: 5px;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+}
+
+.scale-value  {
+  position: absolute;
+  display: inline;
+  bottom: 0px;
+  height: 16px;
+  vertical-align: top;
+}
+
+.scale-value span {
+  line-height: 100%;
+  vertical-align: top;
+}
+
+.scale-value:not(:last-of-type) {
+  border-left: 1px solid #777;
+}
+
+.scale-value:last-of-type {
+  border-right: 1px solid #777;
+}
+
+.scale-min-value {
+  left: 0%;
+}
+
+.scale-max-value {
+  right: 0%;
+}

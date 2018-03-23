@@ -1,0 +1,114 @@
+// @Author: ananayarora
+// @Date:   2017-05-02T23:27:17+05:30
+// @Last modified by:   ananayarora
+// @Last modified time: 2017-05-03T04:27:29+05:30
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$font: "Montserrat";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #34495e;
+}
+
+.logo {
+    background:#eee;
+    padding:40px;
+    width:150px;
+    text-align: center;
+    border-radius:40px;
+    img {
+        width:100px;
+        border-radius:100%;
+        background:#fff;
+        padding:20px;
+    }
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: rgb(177,110,239); /* Old browsers */
+    background: -moz-linear-gradient(45deg, #B0B3FB 0%, #FEEAFE 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #B0B3FB 0%,#FEEAFE 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #B0B3FB 0%,#FEEAFE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B0B3FB', endColorstr='#FEEAFE',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.logo_text {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: $font;
+    font-size:40pt;
+    color:#fff;
+}
+
+.buttons {
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .btn {
+        margin:20px;
+    }
+}
+
+.inline {
+    display: inline-block;
+}
+
+.btn {
+    padding:20px;
+    // background: #fff;
+    width:200px;
+    text-align:center;
+    font-family: $font;
+    font-size:20pt;
+    color:#fff;
+    font-weight:100;
+    border: 5px solid #fff;
+}
+
+.btn:hover {
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.random_flight {
+    color: #fff;
+    font-family: $font;
+    position: absolute;
+    top: 55%;
+    left:50%;
+    font-size: 20pt;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
